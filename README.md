@@ -1,6 +1,6 @@
 <div align="center">
     <h1 style="display: inline-flex; align-items: center;">
-        Awesome 3D Scene Understanding LLMs
+        Awesome LLMs for 3D Scene Understanding
     </h1>
 </div>
 
@@ -13,20 +13,60 @@ This repository manually collects works in llm based **3D Scene Understanding**,
 Here, we classify all the 3D Scene Understanding based methods three categories, and sort by date in ascending order:
 - [📖 News](#-news)
 - [🌟 Overview](#-overview)
-- [🔥 Tasks](#-tasks)
+- [🗒️ Tasks](#-tasks)
 - [🔥 Methods](#-methods)
   - [2D Input](#2D-Input)
   - [3D Input](#3D-Input)
   - [2D+3D Input](#2D+3D-Input)
 - [🤝 Contributing](#-contributing)
 
+## 🗒️ Tasks
+
+### Visual Grounding Task
+| Benchmark Name | Paper Title | Examples | Dataset |
+|---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
+| ScanRefer | ![ECCV'20](https://img.shields.io/badge/ECCV'20-f1b800) <br/> [ScanRefer: 3D Object Localization in RGB-D Scans using Natural Language.](https://arxiv.org/abs/1912.08830)                                                                           |     --      | [HF]()                                    |
+| ScanRefer | ![ICCV'23](https://img.shields.io/badge/ICCV'23-f1b800) <br/> [Multi3drefer: Grounding text description to multiple 3d objects. ](https://arxiv.org/abs/2309.05251)                                                                           |     --      | [HF](https://huggingface.co/datasets/3dlg-hcvc/Multi3DRefer)                                    |
+
+### 2D Spatial Question Answering
+| Benchmark Name | Paper Title | Examples | Dataset |
+|---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
+
+
+### Scene Description
+| Benchmark Name | Paper Title | Examples | Dataset |
+|---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
+| Scan2Cap | ![CVPR'21](https://img.shields.io/badge/CVPR'21-f1b800) <br/> [Scan2Cap: Context-aware Dense Captioning in RGB-D Scans.](https://arxiv.org/pdf/2012.02206)                                                                           |     --      | [HF]()                                    |
+
+
+### 3D Visual Question Answering
+| Benchmark Name | Paper Title | Examples | Dataset |
+|---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
+| ScanQA | ![CVPR'22](https://img.shields.io/badge/CVPR'22-f1b800) <br/> [ScanQA: 3D Question Answering for Spatial Scene Understanding.](https://arxiv.org/abs/2112.10482)                                                                           |     --      | [HF]()                                    |
+| SQA3D | ![ICLR'23](https://img.shields.io/badge/ICLR'23-f1b800) <br/> [SQA3D: Situated Question Answering in 3D Scenes.](https://arxiv.org/abs/2210.07474)                                                                           |     --      | [Zenodo](https://zenodo.org/records/7792397#.ZCkprfFBx3g)                                    |
+| MV-ScanQA | ![ACMMM'25](https://img.shields.io/badge/ACMMM'25-f1b800) <br/> [Advancing 3D Scene Understanding with MV-ScanQA Multi-View Reasoning Evaluation and TripAlign Pre-training Dataset.](https://arxiv.org/abs/2508.11058)                                                                           |     --      | [Github](https://matthewdm0816.github.io/tripalign-mvscanqa/)                                    |
+
+
+### Explore Question Answering
+| Benchmark Name | Paper Title | Examples | Dataset |
+|---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
+| ScanRefer | ![CVPR'24](https://img.shields.io/badge/CVPR'24-f1b800) <br/> [GOAT-Bench: A Benchmark for Multi-modal Lifelong Navigation.](https://arxiv.org/abs/2404.06609) |     --      | [Github](https://github.com/Ram81/goat-bench?tab=readme-ov-file#floppy_disk-dataset)                                    |  
+
+
+<!-- | Benchmark Name | Paper Title | Examples | Dataset |
+|---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
+| ScanRefer | ![ECCV'20](https://img.shields.io/badge/ECCV'20-f1b800) <br/> [ScanRefer: 3D Object Localization in RGB-D Scans using Natural Language.](https://arxiv.org/abs/1912.08830)                                                                           |     --      | [HF]()                                    | -->
+
+
 ## 🔥 Methods
 ### 2D-Input
 
 | Date    | Paper Title                                                                                                                                                                                                    | Introduction                                                        | Code                                                                                       |
 |---------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
-| 2025/05 | [Spatial-MLLM: Boosting MLLM Capabilities in Visual-based Spatial Intelligence](https://arxiv.org/abs/2505.23747)                                                                           | <img width="700" alt="image" src="imgs/2d/2505_vgllm.png">          | [Github](https://github.com/LaVi-Lab/VG-LLM) 
-| 2025/05 | [Boosting MLLM Capabilities in Visual-based Spatial Intelligence](https://arxiv.org/abs/2505.24625)                                                                           | <img width="700" alt="image" src="imgs/2d/2505_spatial.png">          | [Github](https://github.com/diankun-wu/Spatial-MLLM)                                    |
+| 2025/05 | ![NeurIPS'25](https://img.shields.io/badge/NeurIPS'25-f1b800) <br/> [Boosting MLLM Capabilities in Visual-based Spatial Intelligence](https://arxiv.org/abs/2506.01946)                                                                           | <img width="700" alt="image" src="imgs/2d/2505_3drs.png">          | [Github](https://github.com/Visual-AI/3DRS)  |   
+| 2025/05 | ![NeurIPS'25](https://img.shields.io/badge/NeurIPS'25-f1b800) <br/> [Spatial-MLLM: Boosting MLLM Capabilities in Visual-based Spatial Intelligence](https://arxiv.org/abs/2505.23747)                                                                           | <img width="700" alt="image" src="imgs/2d/2505_vgllm.png">          | [Github](https://github.com/LaVi-Lab/VG-LLM) |
+| 2025/05 | ![NeurIPS'25](https://img.shields.io/badge/NeurIPS'25-f1b800) <br/> [Boosting MLLM Capabilities in Visual-based Spatial Intelligence](https://arxiv.org/abs/2505.24625)                                                                           | <img width="700" alt="image" src="imgs/2d/2505_spatial.png">          | [Github](https://github.com/diankun-wu/Spatial-MLLM)                                    |
+                               
 
 
 ### 3D-Input
@@ -36,9 +76,12 @@ Here, we classify all the 3D Scene Understanding based methods three categories,
 ### 2D+3D-Input
 | Date    | Paper Title                                                                                                                                                                                                    | Introduction                                                        | Code                                                                                       |
 |---------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
+| 2023/12 | ![NeurIPS'24](https://img.shields.io/badge/NeurIPS'24-f1b800) <br/> [Chat-Scene: Bridging 3D Scene and Large Language Models with Object Identifiers](https://arxiv.org/pdf/2312.08168)                                                                           | <img width="700" alt="image" src="imgs/mixed/2312_chatscene.png">          | [Github](https://github.com/ZzZZCHS/Chat-Scene)                                    |
+| 2024/11 | ![CVPR'25](https://img.shields.io/badge/CVPR'25-f1b800) <br/> [3D-Mem: 3D Scene Memory for Embodied Exploration and Reasoning](https://arxiv.org/pdf/2411.17735)                                                                           | <img width="700" alt="image" src="imgs/mixed/2411_3dmem.png">          | [Github](https://github.com/UMass-Foundation-Model/3D-Mem)                                    |
 | 2024/12 | ![ICCV'25](https://img.shields.io/badge/ICCV'25-f1b800) <br/> [3DGraphLLM: Combining Semantic Graphs and Large Language Models for 3D Scene Understanding](https://arxiv.org/abs/2412.18450)                                                                           | <img width="700" alt="image" src="imgs/mixed/2412_3DGraphLLM.png">          | [Github](https://github.com/CognitiveAISystems/3DGraphLLM)                                    |
 | 2025/01 | [GPT4Scene: Understand 3D Scenes from Videos with Vision-Language Models](https://arxiv.org/abs/2501.01428.18450)                                                                           | <img width="700" alt="image" src="imgs/mixed/2501_GPT4Scene.png">          | [Github](https://github.com/Qi-Zhangyang/GPT4Scene-and-VLN-R1)                                    |
-
+| 2025/03 | ![ICML'25](https://img.shields.io/badge/ICML'25-f1b800) <br/> [UniVLG: Unifying 2D and 3D Vision-Language Understanding](https://arxiv.org/abs/2503.10745)                                                                           | <img width="700" alt="image" src="imgs/mixed/2503_UniVLG.png">          | [Github](https://github.com/facebookresearch/univlg)                                    |
+| 2025/05 | ![NeurIPS'25](https://img.shields.io/badge/NeurIPS'25-f1b800) <br/> [3DLLM-Mem: Long-Term Spatial-Temporal Memory for Embodied 3D Large Language Model](https://arxiv.org/abs/2505.22657)                                                                           | <img width="700" alt="image" src="imgs/mixed/2505_3dllm_mem.png">          | --                                    |
 
                                    
 
