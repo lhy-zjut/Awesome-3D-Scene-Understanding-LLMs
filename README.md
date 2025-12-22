@@ -4,7 +4,7 @@
     </h1>
 </div>
 
-This repository manually collects works in llm based **3D Scene Understanding**, which will be continuously updated.
+This repository manually collects works in LLM based **3D Scene Understanding**, which will be continuously updated.
 
 ## 📖 News
 **[2025/12/18]** We release the initial version!
@@ -15,9 +15,18 @@ Here, we classify all the 3D Scene Understanding based methods three categories,
 - [🌟 Overview](#-overview)
 - [🗒️ Tasks](#-tasks)
 - [🔥 Methods](#-methods)
-  - [2D Input](#2D-Input)
-  - [3D Input](#3D-Input)
-  - [2D+3D Input](#2D+3D-Input)
+  - [Offline Scene Understanding](#Offline-Scene-Understanding)
+    - [2D Input](#2D-Input)
+    - [3D Input](#3D-Input)
+    - [2D+3D Input](#2D+3D-Input)
+  - [Incremental Scene Understanding](#Incremental-Scene-Understanding)
+    - [2D Input](#2D-Input)
+    - [3D Input](#3D-Input)
+    - [2D+3D Input](#2D+3D-Input)
+  - [Dynamic Scene Understanding](#Dynamic-Scene-Understanding)
+    - [2D Input](#2D-Input)
+    - [3D Input](#3D-Input)
+    - [2D+3D Input](#2D+3D-Input)
 - [🤝 Contributing](#-contributing)
 
 ## 🗒️ Tasks
@@ -36,7 +45,7 @@ Here, we classify all the 3D Scene Understanding based methods three categories,
 ### Scene Description
 | Benchmark Name | Paper Title | Examples | Dataset |
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
-| Scan2Cap | ![CVPR'21](https://img.shields.io/badge/CVPR'21-f1b800) <br/> [Scan2Cap: Context-aware Dense Captioning in RGB-D Scans.](https://arxiv.org/pdf/2012.02206)                                                                           |     --      | [HF]()                                    |
+| Scan2Cap | ![CVPR'21](https://img.shields.io/badge/CVPR'21-f1b800) <br/> [Scan2Cap: Context-aware Dense Captioning in RGB-D Scans.](https://arxiv.org/abs/2012.02206)                                                                           |     --      | [HF]()                                    |
 
 
 ### 3D Visual Question Answering
@@ -53,14 +62,15 @@ Here, we classify all the 3D Scene Understanding based methods three categories,
 | ScanRefer | ![CVPR'24](https://img.shields.io/badge/CVPR'24-f1b800) <br/> [GOAT-Bench: A Benchmark for Multi-modal Lifelong Navigation.](https://arxiv.org/abs/2404.06609) |     --      | [Github](https://github.com/Ram81/goat-bench?tab=readme-ov-file#floppy_disk-dataset)                                    |  
 
 
-<!-- | Benchmark Name | Paper Title | Examples | Dataset |
-|---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
-| ScanRefer | ![ECCV'20](https://img.shields.io/badge/ECCV'20-f1b800) <br/> [ScanRefer: 3D Object Localization in RGB-D Scans using Natural Language.](https://arxiv.org/abs/1912.08830)                                                                           |     --      | [HF]()                                    | -->
+## Related Survey
+When LLMs step into the 3D World: A Survey and Meta-Analysis of 3D Tasks via Multi-modal Large Language Models  https://arxiv.org/abs/2405.10255v2
 
 
 ## 🔥 Methods
-### 2D-Input
 
+### Offline Scene Understanding
+
+#### 2D-Input
 | Date    | Paper Title                                                                                                                                                                                                    | Introduction                                                        | Code                                                                                       |
 |---------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
 | 2025/05 | ![NeurIPS'25](https://img.shields.io/badge/NeurIPS'25-f1b800) <br/> [Boosting MLLM Capabilities in Visual-based Spatial Intelligence](https://arxiv.org/abs/2506.01946)                                                                           | <img width="700" alt="image" src="imgs/2d/2505_3drs.png">          | [Github](https://github.com/Visual-AI/3DRS)  |   
@@ -69,21 +79,40 @@ Here, we classify all the 3D Scene Understanding based methods three categories,
                                
 
 
-### 3D-Input
+#### 3D-Input
 | Date    | Paper Title                                                                                                                                                                                                    | Introduction                                                        | Code                                                                                       |
 |---------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
 
-### 2D+3D-Input
+#### 2D+3D-Input
 | Date    | Paper Title                                                                                                                                                                                                    | Introduction                                                        | Code                                                                                       |
 |---------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
-| 2023/12 | ![NeurIPS'24](https://img.shields.io/badge/NeurIPS'24-f1b800) <br/> [Chat-Scene: Bridging 3D Scene and Large Language Models with Object Identifiers](https://arxiv.org/pdf/2312.08168)                                                                           | <img width="700" alt="image" src="imgs/mixed/2312_chatscene.png">          | [Github](https://github.com/ZzZZCHS/Chat-Scene)                                    |
-| 2024/11 | ![CVPR'25](https://img.shields.io/badge/CVPR'25-f1b800) <br/> [3D-Mem: 3D Scene Memory for Embodied Exploration and Reasoning](https://arxiv.org/pdf/2411.17735)                                                                           | <img width="700" alt="image" src="imgs/mixed/2411_3dmem.png">          | [Github](https://github.com/UMass-Foundation-Model/3D-Mem)                                    |
+| 2023/12 | ![NeurIPS'24](https://img.shields.io/badge/NeurIPS'24-f1b800) <br/> [Chat-Scene: Bridging 3D Scene and Large Language Models with Object Identifiers](https://arxiv.org/abs/2312.08168)                                                                           | <img width="700" alt="image" src="imgs/mixed/2312_chatscene.png">          | [Github](https://github.com/ZzZZCHS/Chat-Scene)                                    |
 | 2024/12 | ![ICCV'25](https://img.shields.io/badge/ICCV'25-f1b800) <br/> [3DGraphLLM: Combining Semantic Graphs and Large Language Models for 3D Scene Understanding](https://arxiv.org/abs/2412.18450)                                                                           | <img width="700" alt="image" src="imgs/mixed/2412_3DGraphLLM.png">          | [Github](https://github.com/CognitiveAISystems/3DGraphLLM)                                    |
 | 2025/01 | [GPT4Scene: Understand 3D Scenes from Videos with Vision-Language Models](https://arxiv.org/abs/2501.01428.18450)                                                                           | <img width="700" alt="image" src="imgs/mixed/2501_GPT4Scene.png">          | [Github](https://github.com/Qi-Zhangyang/GPT4Scene-and-VLN-R1)                                    |
 | 2025/03 | ![ICML'25](https://img.shields.io/badge/ICML'25-f1b800) <br/> [UniVLG: Unifying 2D and 3D Vision-Language Understanding](https://arxiv.org/abs/2503.10745)                                                                           | <img width="700" alt="image" src="imgs/mixed/2503_UniVLG.png">          | [Github](https://github.com/facebookresearch/univlg)                                    |
 | 2025/05 | ![NeurIPS'25](https://img.shields.io/badge/NeurIPS'25-f1b800) <br/> [3DLLM-Mem: Long-Term Spatial-Temporal Memory for Embodied 3D Large Language Model](https://arxiv.org/abs/2505.22657)                                                                           | <img width="700" alt="image" src="imgs/mixed/2505_3dllm_mem.png">          | --                                    |
+| 2025/07 | [3D-R1: Enhancing Reasoning in 3D VLMs for Unified Scene Understanding](https://arxiv.org/abs/2507.23478)                                                                           | <img width="700" alt="image" src="imgs/mixed/2507_3Dr1.png">          | [Github](https://github.com/AIGeeksGroup/3D-R1) |
+| 2025/12 | [SNOW: Spatio-Temporal Scene Understanding with World Knowledge for Open-World Embodied Reasoning](https://arxiv.org/abs/2512.16461)                                                                           | <img width="700" alt="image" src="imgs/mixed/2512_SNOW.png">          | [Github](https://github.com/AIGeeksGroup/3D-R1) |
 
-                                   
+### Incremental Scene Understanding
+#### 2D-Input
+| Date    | Paper Title                                                                                                                                                                                                    | Introduction                                                        | Code                                                                                       |
+|---------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
+| 2024/10 | ![IROS'25](https://img.shields.io/badge/IROS'25-f1b800) <br/> [EfficientEQA: An Efficient Approach to Open-Vocabulary Embodied Question Answering](https://arxiv.org/abs/2410.20263)                                                                           | <img width="700" alt="image" src="imgs/2d/2410_EfficientEQA.png">          | --                                    |
+| 2025/12 | [MomaGraph: State-Aware Unified Scene Graphs with Vision-Language Model for Embodied Task Planning](https://arxiv.org/abs/2512.16909)                                                                           | <img width="700" alt="image" src="imgs/2d/2512_MomaGraph.png">          | --                                    |
+
+
+#### 2D+3D-Input
+| Date    | Paper Title                                                                                                                                                                                                    | Introduction                                                        | Code                                                                                       |
+|---------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
+
+| 2024/11 | ![CVPR'25](https://img.shields.io/badge/CVPR'25-f1b800) <br/> [3D-Mem: 3D Scene Memory for Embodied Exploration and Reasoning](https://arxiv.org/abs/2411.17735)                                                                           | <img width="700" alt="image" src="imgs/mixed/2411_3dmem.png">          | [Github](https://github.com/UMass-Foundation-Model/3D-Mem)                                    |
+
+
+
+### Dynamic Scene Understanding
+
+
 
 ## 🤝 Contributing
 We warmly welcome contributions of excellent resources you find via **pull request**. Please follow the instruction in **CONTRIBUTING.md** if you want to make one.
